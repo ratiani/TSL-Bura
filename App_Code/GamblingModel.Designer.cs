@@ -8,12 +8,13 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
@@ -209,6 +210,7 @@ namespace GamblingModel
         private ObjectSet<Player> _Players;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -276,11 +278,11 @@ namespace GamblingModel
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -317,6 +319,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -515,6 +518,7 @@ namespace GamblingModel
         partial void OnEndDateChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -541,6 +545,7 @@ namespace GamblingModel
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -573,6 +578,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -723,6 +729,7 @@ namespace GamblingModel
         partial void OnIsEventPlayedChanged();
 
         #endregion
+
     
     }
     
@@ -756,6 +763,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -882,6 +890,7 @@ namespace GamblingModel
         partial void OnPlayerScoreChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1012,6 +1021,7 @@ namespace GamblingModel
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1046,6 +1056,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1319,6 +1330,7 @@ namespace GamblingModel
         partial void OnDealingCardCountChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1497,6 +1509,7 @@ namespace GamblingModel
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1525,6 +1538,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1603,6 +1617,7 @@ namespace GamblingModel
         partial void OnCardNameChanged();
 
         #endregion
+
     
     }
     
@@ -1632,6 +1647,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1710,6 +1726,7 @@ namespace GamblingModel
         partial void OnCardNameChanged();
 
         #endregion
+
     
     }
     
@@ -1741,6 +1758,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1843,6 +1861,7 @@ namespace GamblingModel
         partial void OnCardValueChanged();
 
         #endregion
+
     
     }
     
@@ -1872,6 +1891,7 @@ namespace GamblingModel
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1974,9 +1994,11 @@ namespace GamblingModel
         partial void OnPlayerAvatarChanged();
 
         #endregion
+
     
     }
 
     #endregion
+
     
 }
