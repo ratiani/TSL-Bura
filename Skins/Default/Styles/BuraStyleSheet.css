@@ -1,0 +1,399 @@
+﻿body 
+{
+    background: url("../Images/Common/Background.jpg") no-repeat scroll center top #000000;
+    font-family: Sans-serif;
+    text-align: center;    
+}
+
+form 
+{
+    margin:0;
+}
+
+.Board
+{
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 982px;    
+    z-index:0;
+}
+
+.Table 
+{
+    background: url("../Images/Common/BuraBoard.png") no-repeat scroll center top transparent;
+    height: 545px;
+    position: absolute;
+    top: 110px;
+    width: 982px;    
+}
+
+.PlayerScore
+{
+    background: url("../Images/Common/PlayerScoreBG.png") no-repeat scroll center top transparent;
+    font-size: 23px;
+    height: 32px;
+    padding-top: 2px;
+    position: absolute;
+    text-align: center;
+    width: 48px;
+    z-index:1;
+}
+
+.PlayerScore.Top
+{
+    color: #CCA625;
+    left: 340px;
+    top: 110px;
+}
+
+.PlayerScore.Bottom
+{
+    bottom: 147px;
+    color: #0CBE2A;
+    left: 340px;
+}
+
+.PlayerTimer
+{
+    background: url("../Images/Common/TimerBG.png") no-repeat scroll center top transparent;
+    height: 100px;
+    position: absolute;
+    width: 17px;    
+}
+
+.PlayerTimer div.ElapsedContent
+{
+    background: url("../Images/Common/TimerEmptyPart.png") repeat-y center top transparent;
+    display: table-cell;
+    height: 0px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 17px;
+}
+
+.PlayerTimer.Top 
+{
+    left: 410px;
+    top: 23px;
+}
+
+.PlayerTimer.Bottom
+{
+    left: 131px;
+    top: 677px;
+}
+
+.PlayerTimer.Top div.ElapsedContent 
+{
+    height:50px;
+}
+
+.PlacedCard, .PlacedHiddenCard, .HiddenPlacedCard
+{
+    display:inline;
+}
+
+.PlaceCardScript
+{
+    display:none;
+}
+
+.ButtonsDiv a
+{
+    display:inline-block;
+    background-color:Black;
+    color:White;
+    font-weight:bold;
+    cursor:pointer;
+    margin:4px;
+    padding:4px;
+    font-size:10px;
+}
+
+.PlayerAvatar {
+    background: url("../Images/Common/PlayerAvatarBG.png") no-repeat scroll center top transparent;
+    height: 129px;
+    position: absolute;
+    width: 126px;
+}
+
+.PlayerAvatar.Top {
+    left: 430px;
+    top: 9px;
+}
+
+.PlayerAvatar.Bottom {
+    bottom: 9px;
+    left: 153px;
+}
+
+.PlayerName {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-left: -3px;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.PlayerAvatar .Avatar {
+    border: 5px solid #FFFFFF;
+    height: 70px;
+    margin-left: 22px;
+    width: 70px;
+}
+
+.Clearer {
+    clear: both;
+}
+
+.GameInfo 
+{
+    background: url("../Images/Common/GameInfoBG.png") no-repeat scroll center top transparent;
+    bottom: 40px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    height: 87px;
+    line-height: 15px;
+    padding-top: 7px;
+    position: absolute;
+    right: 114px;
+    text-align: center;
+    width: 198px;
+}
+
+.GameInfo font {
+    color: #BABABA;
+}
+
+.DoublingInfo
+{
+    background: url("../Images/Common/DoublingBG.png") no-repeat scroll center top transparent;
+    bottom: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 12px;
+    position: absolute;
+    right: 114px;
+    text-align: center;
+    width: 197px;
+}
+
+/* Bura Message Styles */
+.MessageBox 
+{
+    background: url("../Images/Common/MessageBox.png") no-repeat scroll center top transparent;
+    bottom: 6px;
+    height: 88px;
+    left: 281px;
+    padding-top: 40px;
+    position: absolute;
+    text-align: center;
+    width: 389px;    
+}
+
+.MessageBox .Text
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 389px;
+}
+
+.MessageOptions .Option
+{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.Option .Left 
+{
+    float: left;
+    height: 50px;
+    width: 9px;    
+}
+
+.Option .Middle
+{
+    background-repeat: repeat-x;
+    color: #EDF4F9;
+    float: left;
+    font-size: 14px;
+    padding: 16px 10px;
+}
+
+.Option .Right
+{
+    float: left;
+    height: 50px;
+    width: 9px;    
+}
+
+
+.Option.Red .Left 
+{
+    background: url("../Images/Buttons/red_left.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Red:hover .Left 
+{
+    background: url("../Images/Buttons/red_left_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Red .Middle
+{
+    background-image: url("../Images/Buttons/red_middle.png");
+}
+
+.Option.Red:hover .Middle
+{
+    background-image: url("../Images/Buttons/red_middle_active.png");
+}
+
+.Option.Red .Right 
+{
+    background: url("../Images/Buttons/red_right.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Red:hover .Right 
+{
+    background: url("../Images/Buttons/red_right_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Blue .Left 
+{
+    background: url("../Images/Buttons/Blue_left.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Blue:hover .Left 
+{
+    background: url("../Images/Buttons/Blue_left_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Blue .Middle
+{
+    background-image: url("../Images/Buttons/Blue_middle.png");
+}
+
+.Option.Blue:hover .Middle
+{
+    background-image: url("../Images/Buttons/Blue_middle_active.png");
+}
+
+.Option.Blue .Right 
+{
+    background: url("../Images/Buttons/Blue_right.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Blue:hover .Right 
+{
+    background: url("../Images/Buttons/Blue_right_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Green .Left 
+{
+    background: url("../Images/Buttons/Green_left.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Green:hover .Left 
+{
+    background: url("../Images/Buttons/Green_left_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Green .Middle
+{
+    background-image: url("../Images/Buttons/Green_middle.png");
+}
+
+.Option.Green:hover .Middle
+{
+    background-image: url("../Images/Buttons/Green_middle_active.png");
+}
+
+.Option.Green .Right 
+{
+    background: url("../Images/Buttons/Green_right.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Green:hover .Right 
+{
+    background: url("../Images/Buttons/Green_right_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Silver .Left 
+{
+    background: url("../Images/Buttons/Silver_left.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Silver:hover .Left 
+{
+    background: url("../Images/Buttons/Silver_left_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Silver .Middle
+{
+    background-image: url("../Images/Buttons/Silver_middle.png");
+}
+
+.Option.Silver:hover .Middle
+{
+    background-image: url("../Images/Buttons/Silver_middle_active.png");
+}
+
+.Option.Silver .Right 
+{
+    background: url("../Images/Buttons/Silver_right.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Silver:hover .Right 
+{
+    background: url("../Images/Buttons/Silver_right_active.png") no-repeat scroll center top transparent;
+}
+
+
+
+.BuraMessageContent div
+{
+    background-color:White;
+    padding:16px;
+    font-weight:bold;
+    margin:auto;
+}
+
+.MessageOptions
+{
+    margin:auto;
+}
+
+.MessageOptions a
+{
+    background-color:green;
+    padding:4px;
+    font-weight:bold;
+    margin:8px;
+    border: 1px solid red;
+    cursor:pointer;
+}
+
+
+
+.ShowCards span 
+{
+    margin-left: 100px;
+}
+
+.ShowCards span span
+{
+    margin-left: -60px;
+}

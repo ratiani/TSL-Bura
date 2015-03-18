@@ -1,0 +1,536 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    border: none;
+}
+.clear
+{
+    clear: both;
+}
+.main1
+{
+    width: 962px;
+    padding: 4px;
+    margin: 0 auto;
+    background: #324961 url('../Images/Lobby/main1.png') repeat-x;
+    position: relative;
+}
+.main2
+{
+    width: 954px;
+    padding: 3px 4px;
+    background: #051c37;
+}
+.main3
+{
+    background: url('../Images/Lobby/main2.png') repeat-x bottom;
+    min-height: 680px;
+    height: auto !important;
+    height: 680px;
+}
+.head
+{
+    background: url('../Images/Lobby/head.png') repeat-x bottom;
+    height: 70px;
+}
+.head1
+{
+    float: left;
+    background: url('../Images/Lobby/head1.png');
+    width: 382px;
+    height: 70px;
+}
+.head2
+{
+    float: right;
+    padding: 38px 5px 0 0;
+}
+.c_left
+{
+    float: left;
+    width: 642px;
+    height: 10px;
+    margin-right: 2px;
+}
+.c_right
+{
+    float: left;
+    width: 310px;
+    background: url('../Images/Lobby/c_right.png') top no-repeat;
+    padding-top: 4px;
+}
+.balansi_div
+{
+    background: url('../Images/Lobby/balansi_bg.png');
+    height: 68px;
+    margin-bottom: 1px;
+    position: relative;
+}
+.avatar_img
+{
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    width: 63px;
+    height: 58px;
+}
+.balansi_text1
+{
+    position: absolute;
+    left: 83px;
+    top: 5px;
+    height: 18px;
+    line-height: 18px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.balansi_text2
+{
+    position: absolute;
+    left: 83px;
+    top: 25px;
+    height: 18px;
+    line-height: 18px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.change_avatar_bt
+{
+    position: absolute;
+    left: 77px;
+    top: 46px;
+    width: 144px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    background: url('../Images/Lobby/change_avatar_bt.png') top;
+    border: none;
+    cursor: pointer;
+}
+.change_avatar_bt:hover
+{
+    background: url('../Images/Lobby/change_avatar_bt.png') bottom;
+    color: #FFF;
+}
+.filtri_div
+{
+    background: url('../Images/Lobby/filtri_bg.png');
+    height: 218px;
+    margin-bottom: 2px;
+    position: relative;
+}
+.filter_title
+{
+    position: absolute;
+    left: 70px;
+    top: 3px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    width: 162px;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+}
+.filter_show
+{
+    position: absolute;
+    left: 31px;
+    bottom: 10px;
+    border: none;
+    background: url('../Images/Lobby/new_table_bt.png');
+    width: 122px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.filter_clear
+{
+    position: absolute;
+    left: 156px;
+    bottom: 10px;
+    border: none;
+    background: url('../Images/Lobby/new_table_bt.png');
+    width: 122px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new_table_div
+{
+    background: url('../Images/Lobby/new_table_bg.png');
+    height: 70px;
+    margin-bottom: 2px;
+    position: relative;
+}
+.new_table_title
+{
+    position: absolute;
+    left: 70px;
+    top: 3px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    width: 162px;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+}
+.new_table_bt
+{
+    position: absolute;
+    left: 92px;
+    top: 32px;
+    border: none;
+    background: url('../Images/Lobby/new_table_bt.png');
+    width: 122px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.check_label
+{
+    height: 15px;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding-left: 25px;
+    background: url('../Images/Lobby/check.png') left top no-repeat;
+    cursor: pointer;
+    padding-bottom: 1px;
+    text-decoration:none;
+}
+.check_label.active
+{
+    background: url('../Images/Lobby/check.png') left bottom no-repeat;    
+}
+.checkbox
+{
+    display: none;
+}
+.radio_label
+{
+    height: 15px;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding-left: 25px;
+    background: url('../Images/Lobby/radio.png') left top no-repeat;
+    cursor: pointer;
+    padding-bottom: 1px;
+    text-decoration:none;
+}
+.radio_label.active
+{
+    background: url('../Images/Lobby/radio.png') left bottom no-repeat;
+}
+.radio
+{
+    display: none;
+}
+
+.menu
+{
+    height: 40px;
+    background: url('../Images/Lobby/mn.png');
+    padding: 4px 1px 2px 1px;
+}
+.menu_a1
+{
+    width: 159px;
+    height: 40px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+.menu_a2
+{
+    width: 159px;
+    height: 40px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+.menu_a3
+{
+    width: 161px;
+    height: 40px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+.menu_a4
+{
+    width: 155px;
+    height: 40px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+
+.menu_a1.active, .menu_a2.active, .menu_a3.active, .menu_a4.active
+{
+    background: url('../Images/Lobby/menu_hover.png');
+}
+
+
+
+.row1
+{
+    font-size: 12px;
+    color: #4d4d4d;
+    font-weight: bold;
+    background: url('../Images/Lobby/row_1.png');
+    cursor: pointer;
+}
+.row2
+{
+    font-size: 12px;
+    color: #4d4d4d;
+    font-weight: bold;
+    background: url('../Images/Lobby/row_2.png');
+    cursor: pointer;
+}
+.row1:hover, .row2:hover
+{
+    background: url('../Images/Lobby/row_hover.png');
+}
+.row_r
+{
+    background: url('../Images/Lobby/r1.png') right center no-repeat;
+}
+.row_r_active
+{
+    background: url('../Images/Lobby/r2.png') right center no-repeat;
+}
+
+.c_left_div
+{
+    height: 391px;
+    background: url('../Images/Lobby/l1.png');
+}
+.c_left_div_title
+{
+    margin-bottom: 1px;
+    font-size: 13px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+.scroll_content
+{
+    float: left;
+    width: 642px;
+    height: 363px;
+}
+.scroll_div
+{
+    float: left;
+    width: 14px;
+    height: 364px;
+    position: relative;
+}
+
+
+.popup_div
+{
+    width: 395px;
+    height: 271px;
+    background: url('../Images/Lobby/popup.png');
+    position: relative;
+}
+.popup_close
+{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 60px;
+    height: 55px;
+    background: url('../Images/Lobby/popup_close.png');
+    border: none;
+    cursor: pointer;
+}
+.popup_bt
+{
+    position: absolute;
+    left: 137px;
+    bottom: 37px;
+    border: none;
+    cursor: pointer;
+    width: 122px;
+    height: 28px;
+    line-height: 28px;
+    background: url('../Images/Lobby/popup_bt.png');
+    font-size: 12px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.scrollbar
+{
+    width: 641px;
+    height: 363px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* ---------- basic theme: these are the most necessary styles --------------------------------- */
+
+.scrollbar-pane
+{
+    margin-right: 13px;
+}
+
+.scrollbar-handle-container
+{
+    width: 13px;
+}
+
+.scrollbar-handle
+{
+    width: 13px;
+    height: 39px;
+    background: url('../Images/Lobby/scroll_dragger.png');
+}
+
+.scrollbar-handle:hover
+{
+}
+
+.scrollbar-handle.move
+{
+}
+
+.scrollbar-handle-up
+{
+}
+
+.scrollbar-handle-up:hover
+{
+}
+
+.scrollbar-handle-down
+{
+}
+
+.scrollbar-handle-down:hover
+{
+}
+
+
+
+
+/* handle */
+.simple .scrollbar-handle
+{
+    width: 13px;
+    height: 39px;
+    background: url('../Images/Lobby/scroll_dragger.png');
+}
+
+.simple .scrollbar-handle:hover
+{
+}
+
+.simple .scrollbar-handle.move
+{
+}
+
+
+/* arrow up */
+.simple .scrollbar-handle-up
+{
+    width: 13px;
+    height: 13px;
+    margin-bottom: 1px;
+    background: url('../Images/Lobby/scroll_up.png');
+}
+
+.simple .scrollbar-handle-up.hover, .simple .scrollbar-handle-up:hover
+{
+}
+
+.simple .scrollbar-handle-up.move
+{
+}
+
+
+/* arrow down */
+.simple .scrollbar-handle-down
+{
+    width: 13px;
+    height: 13px;
+    margin-top: 1px;
+    background: url('../Images/Lobby/scroll_down.png');
+}
+
+.simple .scrollbar-handle-down.hover, .simple .scrollbar-handle-down:hover
+{
+}
+
+.simple .scrollbar-handle-down.move
+{
+}
+
+

@@ -1,0 +1,408 @@
+﻿body 
+{
+    /*background: url("../Images/Common/Background.jpg") no-repeat scroll center top #000000;*/
+    background-color: #143019;
+    font-family: Sans-serif;
+    text-align: center;    
+}
+
+form 
+{
+    margin:0;
+}
+
+.Board
+{
+    background: url("../Images/Common/BoardBG.png");
+    height: 690px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 970px;    
+    z-index:0;
+}
+
+.BuraLogo
+{
+    background: url("../Images/Common/BuraLogo.png") no-repeat scroll center top transparent;
+    left:860px;
+    top:20px;
+    position:absolute;
+    height:40px;
+    width:110px;
+}
+
+.Table 
+{
+    background: url("../Images/Common/BoardBG.png") no-repeat scroll center top transparent;
+    height: 545px;
+    position: absolute;
+    top: 110px;
+    width: 982px;
+    display:none;
+}
+
+.PlayerNameHolder.Top
+{
+    background-image:url("../Images/Common/TopPlayerNameHolder.png");
+    left:350px;
+    top:0px;
+    height:23px;
+    width:346px;
+    position:absolute;
+    margin-top:-4px;
+}
+
+.PlayerNameHolder.Bottom
+{
+    display:none;
+}
+
+.CardArea 
+{
+}
+
+.CardArea.Top
+{
+    background-image:url("../Images/Common/TopPlayerArea.png");
+    left:240px;
+    top:50px;
+    height:143px;
+    width:522px;
+    position:absolute;
+}
+
+.CardArea.Bottom
+{
+    background-image:url("../Images/Common/BottomPlayerArea.png");
+    left:240px;
+    top:485px;
+    height:143px;
+    width:522px;
+    position:absolute;
+}
+
+.CardArea.Center
+{
+    background-image:url("../Images/Common/CardsArea.png");
+    left:240px;
+    top:205px;
+    height:261px;
+    width:522px;
+    position:absolute;
+}
+
+.PlayerScore
+{
+    background: url("../Images/Common/PlayerScore.png") no-repeat scroll center top transparent;
+    font-size: 18px;
+    font-weight:bold;
+    height: 34px;
+    width: 32px;
+    position: absolute;
+    text-align: center;
+    padding-top:5px;
+    z-index:1;
+}
+
+.PlayerScore.Top
+{
+    color: Black;
+    left: 755px;
+    top: 85px;
+}
+
+.PlayerScore.Bottom
+{
+    color: Black;
+    top: 605px;
+    left: 755px;
+}
+
+.PlayerTimer
+{
+    background: url("../Images/Common/TimerBG.png") no-repeat scroll center top transparent;
+    height: 100px;
+    position: absolute;
+    width: 17px;    
+}
+
+.PlayerTimer div.ElapsedContent
+{
+    background: url("../Images/Common/TimerEmptyPart.png") repeat-y center top transparent;
+    display: table-cell;
+    height: 0px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 17px;
+}
+
+.PlayerTimer.Top 
+{
+    left: 775px;
+    top: 25px;
+}
+
+.PlayerTimer.Bottom
+{
+    left: 775px;
+    top: 550px;
+}
+
+
+.GameInfo
+{
+    background: url("../Images/Common/GameInfo.png") no-repeat scroll center top transparent;
+    position: absolute;
+    top:450px;
+    left:800px;
+    height: 76px;
+    width: 159px;    
+}
+
+.PlayerTimer.Top div.ElapsedContent 
+{
+    height:50px;
+}
+
+.PlacedCard, .PlacedHiddenCard, .HiddenPlacedCard
+{
+    display:inline;
+}
+
+.PlaceCardScript
+{
+    display:none;
+}
+
+.ButtonsDiv a
+{
+    display:inline-block;
+    background-color:Black;
+    color:White;
+    font-weight:bold;
+    cursor:pointer;
+    margin:4px;
+    padding:4px;
+    font-size:10px;
+}
+
+.PlayerAvatar {
+    background: url("../Images/Common/PlayerAvatar.png") no-repeat scroll center top transparent;
+    height: 70px;
+    position: absolute;
+    width: 70px;
+}
+
+.PlayerAvatar.Top {
+    left: 700px;
+    top: 40px;
+}
+
+.PlayerAvatar.Bottom {
+    top: 565px;
+    left: 700px;
+}
+
+.PlayerName {
+    color: #b58817;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width:300px;
+    height:24px;
+    vertical-align:top;
+}
+
+.PlayerName.Top
+{
+    position:absolute;
+    left: 370px;
+    top: 0px;
+    margin-top:-2px;
+}
+
+.PlayerName.Bottom
+{
+    display:none;
+}
+
+.PlayerAvatar .Avatar {
+    height: 70px;
+    width: 70px;
+}
+
+.Clearer {
+    clear: both;
+}
+
+.GameInfoDetail
+{
+    background: url("../Images/Common/GameInfoDetail.png") no-repeat left top transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding-top: 2px;
+    padding-left:26px;
+    text-align: left;
+    position: absolute;
+    top: 640px;
+    left: 773px;
+    width: 198px;
+    height: 59px;
+}
+
+.GameInfoDetail font {
+    color: #BABABA;
+}
+
+.DoublingInfo
+{
+    /*background: url("../Images/Common/DoublingBG.png") no-repeat scroll center top transparent;*/
+    bottom: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 12px;
+    position: absolute;
+    right: 114px;
+    text-align: center;
+    width: 197px;
+}
+
+/* Bura Message Styles */
+.MessageBox 
+{
+    background: url("../Images/Common/MessageBox.png") no-repeat scroll center top transparent;
+    top: 645px;
+    height: 51px;
+    left: 260px;
+    position: absolute;
+    text-align: center;
+    width: 467px;    
+}
+
+.MessageBox .Text
+{
+    color: #ff0101;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 467px;
+}
+
+.MessageOptions .Option
+{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.MessageOptions .Option:hover
+{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.Option .Left 
+{
+    float: left;
+    /*width: 9px;*/
+}
+
+.Option .Middle
+{
+    /*background-repeat: repeat-x;*/
+    background: url("../Images/Common/MessageOption.png") no-repeat scroll center center transparent;
+    color: #8bc485;
+    float: left;
+    font-size: 14px;
+    margin-top:23px;
+    height:28px;
+    width:121px;
+}
+
+.Option .Middle:hover 
+{
+    background: url("../Images/Common/MessageOptionHover.png") no-repeat scroll center center transparent;
+    color: #e6e6e6;
+}
+
+.Option .Right
+{
+    float: left;
+    /*width: 9px;*/
+}
+
+/*
+.Option.Red .Left 
+{
+    background: url("../Images/Buttons/red_left.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Red:hover .Left 
+{
+    background: url("../Images/Buttons/red_left_active.png") no-repeat scroll center top transparent;
+}
+
+.Option.Red .Middle
+{
+    background-image: url("../Images/Buttons/red_middle.png");
+}
+
+.Option.Red:hover .Middle
+{
+    background-image: url("../Images/Buttons/red_middle_active.png");
+}
+
+.Option.Red .Right 
+{
+    background: url("../Images/Buttons/red_right.png") no-repeat scroll center top transparent;    
+}
+
+.Option.Red:hover .Right 
+{
+    background: url("../Images/Buttons/red_right_active.png") no-repeat scroll center top transparent;
+}
+*/
+
+.BuraMessageContent div
+{
+    background-color:White;
+    padding:16px;
+    font-weight:bold;
+    margin:auto;
+}
+
+.MessageOptions
+{
+    margin:auto;
+}
+
+.MessageOptions a
+{
+    background-color:green;
+    padding:4px;
+    font-weight:bold;
+    margin:8px;
+    border: 1px solid red;
+    cursor:pointer;
+}
+
+
+
+.ShowCards span 
+{
+    margin-left: 100px;
+}
+
+.ShowCards span span
+{
+    margin-left: -60px;
+}

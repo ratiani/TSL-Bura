@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Pages/Gambling.master" AutoEventWireup="true" CodeFile="Bura.master.cs" Inherits="Pages_Bura_Bura" %>
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder id="BuraHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ContentBody" ContentPlaceHolderID="GamblingContentPlaceHolder" Runat="Server">
+    <b style="color:Maroon;">Bura Master</b>
+    <hr />
+
+    <asp:ContentPlaceHolder id="BuraContentPlaceHolder" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+
